@@ -5,14 +5,14 @@ interface Props {
   card: CardModel;
 }
 const Card = ({ card }: Props) => {
-  const DATE_FORMAT = "MMM L, yyyy";
+  const DATE_FORMAT = "MMM d, yyyy";
   return (
     <div className="card">
       <h3>{card.title}</h3>
-      <span>
+      <span className="_created">
         <>Created: {format(card.created, DATE_FORMAT)}</>
       </span>
-      <span>{card.content}</span>
+      <div className="_content">{card.content}</div>
     </div>
   );
 };

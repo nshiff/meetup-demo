@@ -8,10 +8,11 @@ const App = () => {
   return (
     <div className="page-container">
       <h1>Meetup Demo</h1>
-      <button>Add Card</button>
-      {cards.map((card) => (
-        <Card key={card.id} card={card} />
-      ))}
+      <div className="cards">
+        {cards.map((card) => (
+          <Card key={card.id} card={card} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -12,3 +12,26 @@ body {
 .page-container {
   padding: 12px;
 }
+
+.cards {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid cyan;
+  width: 360px;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  margin-right: 28px;
+}
+
+.card ._created {
+  font-style: italic;
+}
+
+.card ._content {
+  padding-top: 16px;
+}
