@@ -1,5 +1,9 @@
-const CounterDemo = () => {
-  return <div className="counter-demo">hello</div>;
+const App = () => {
+  return (
+    <div className="page-container">
+      <div>hi</div>
+    </div>
+  );
 };
 
-export default CounterDemo;
+export default App;

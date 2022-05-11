@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import CounterDemo from "./app";
+import "./styles/styles.css";
+import App from "./components/app";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <CounterDemo />
+    <App />
   </React.StrictMode>
 );
