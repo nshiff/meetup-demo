@@ -1,10 +1,10 @@
 import { CardModel } from "../util/application-types";
 import { format } from "date-fns";
 
-interface Props {
+interface CardProps {
   card: CardModel;
 }
-const Card = ({ card }: Props) => {
+const Card = ({ card }: CardProps) => {
   const DATE_FORMAT = "MMM d, yyyy";
   return (
     <div className="card">

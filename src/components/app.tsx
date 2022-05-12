@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { CardModel } from "../util/application-types";
 import { DEFAULT_CARDS } from "../util/constants";
 import Card from "./card";
 
 const App = () => {
-  const [cards, setCards] = useState(DEFAULT_CARDS);
+  const [cards, setCards] = useState<CardModel[]>(DEFAULT_CARDS);
 
   return (
     <div className="page-container">
